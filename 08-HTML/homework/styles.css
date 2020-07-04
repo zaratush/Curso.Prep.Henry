@@ -3,14 +3,14 @@
 			color: red;
 		}
 		img{
-			width: 400px 
+			width: 400px ;
 		}
 		#thirdDiv {
-			height: 500px
-			width:600px;
+			height: 600px;
+			width:500px;
 			background-color: orange;
-			padding: 50px
-			border: 10px solid blue;
+			padding: 50px;
+			border: 10px solid red;
 		}
 		#spanId{
 			font-size: 18px;
