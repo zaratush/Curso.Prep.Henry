@@ -6,6 +6,14 @@ function crearGato(nombre, edad) {
   // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
   // Devuelve el objeto
   // Tu código:
+  gato={               
+    nombre: nombre,
+    edad: edad, 
+    meow: function (){
+      return 'Meow!' 
+    }
+  }
+  return gato
 }
 
 
@@ -14,39 +22,52 @@ function agregarPropiedad(objeto, property) {
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
+Object.defineProperty(objeto,property,{value:null})
 }
 
 function invocarMetodo(objeto, metodo) {
   // "metodo" es una cadena que contiene el nombre de un método (funcion) en el objeto
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
-  // Tu código:
+  // Tu código: 
+  
+
+  
 }
 
-function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
+  function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
-
+  return objetoMisterioso[numeroMisterioso]*5
 }
 
 function eliminarPropiedad(objeto, propiedad) {
   // Elimina la propiedad "propiedad" de "objeto"
   // Devuelve el objeto
   // Tu código:
+  delete objeto[propiedad]
+  return objeto
 }
+
 
 function nuevoUsuario(nombre, email, password) {
   // Crea un nuevo objeto con las propiedades coincidiendo con los argumentos que se pasan a la función
-  // Devuelve el objeto
-  // Tu código:
-
+  // Devuelve el objeto// Tu código:
+  nuevoobjeto={
+    nombre:nombre,
+    email:email,
+    password:password,
+  } 
+  return nuevoobjeto
 }
 
 function tieneEmail(usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
+
+  return usuario[email]!==undefined
 }
 
 
@@ -55,6 +76,8 @@ function tienePropiedad(objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
+  return objeto===propiedad
+
 }
 
 function verificarPassword(usuario, password) {
@@ -62,12 +85,16 @@ function verificarPassword(usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // // Tu código:
+  return password===usuario[password] 
 }
 
 function actualizarPassword(usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevagPassword"
   // Devuelve el objeto
   // Tu código:
+  usuario[nuevaPassword]="nuevagPassword"
+
+  return usuario
 }
 
 function agregarAmigo(usuario, nuevoAmigo) {
@@ -75,6 +102,9 @@ function agregarAmigo(usuario, nuevoAmigo) {
   // Agrega "nuevoAmigo" al final de ese array
   // Devuelve el objeto "usuario"
   // // Tu código:
+  usuario.amigos.push(nuevoAmigo)
+
+  return usuario
 }
 
 function pasarUsuarioAPremium(usuarios) {
@@ -83,6 +113,10 @@ function pasarUsuarioAPremium(usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
+  for (var i = 0; i < usuarios.length; i++) {
+    usuarios[i].esPremium= true
+  }
+  return usuarios
 }
 
 function sumarLikesDeUsuario(usuario) {
@@ -92,6 +126,8 @@ function sumarLikesDeUsuario(usuario) {
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
+
+
 }
 
 function agregarMetodoCalculoDescuento(producto) {
