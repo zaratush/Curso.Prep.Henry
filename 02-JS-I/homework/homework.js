@@ -28,8 +28,8 @@ const nuevoModulo = 21 % 5 === 1 ;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-console.log ('hola'); 
-return str;
+  console.log ('hola'); 
+  return str;
 }
 
 
@@ -45,7 +45,7 @@ function resta(x, y) {
   // Resta "x" de "y" y devuelve el valor
   // Tu código:
   var resta = x-y
-return resta;
+  return resta;
 }
 
 function multiplica(x, y) {
@@ -74,19 +74,14 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
- 
 
-if(str1.lenght===str2.lenght);{
-return true}
- {
-return false}
+  return str1.length === str2.length;
 }
-
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-return num<90
+  return num<90
 }
 
 function mayorQueCincuenta(num) {
@@ -107,7 +102,7 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-return num%2===0
+  return num%2===0
 }
 
 function esImpar(num) {
@@ -115,15 +110,15 @@ function esImpar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
 
-return num%2===1
+  return num%2===1
 }
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-cuadra = Math.pow(num,2) 
-return cuadra
+  cuadra = Math.pow(num,2) 
+  return cuadra
 }
 
 function elevarAlCubo(num) {
@@ -136,8 +131,8 @@ function elevarAlCubo(num) {
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-elevado = Math.pow(num,exponent)
-return elevado
+  elevado = Math.pow(num,exponent)
+  return elevado
 }
 
 function redondearNumero(num) {
@@ -159,15 +154,15 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-return str +'!';
+  return str +'!';
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-nyap= nombre+' ' + apellido
-return nyap;
+  nyap= nombre+' ' + apellido
+  return nyap;
 }
 
 function obtenerSaludo(nombre) {
@@ -175,7 +170,7 @@ function obtenerSaludo(nombre) {
   // "Martin" -> "Hola Martin!"
   // Tu código:
   conca= 'Hola '+ nombre +'!'
-return conca;
+  return conca;
 }
 
 function obtenerAreaRectangulo(alto, ancho) {

@@ -22,7 +22,8 @@ function agregarPropiedad(objeto, property) {
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
-Object.defineProperty(objeto,property,{value:null})
+  objeto[property]=null
+  return objeto
 }
 
 function invocarMetodo(objeto, metodo) {
@@ -30,16 +31,16 @@ function invocarMetodo(objeto, metodo) {
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
   // Tu código: 
-  
+  objeto[metodo]()  
 
   
 }
 
-  function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
+function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
-  return objetoMisterioso[numeroMisterioso]*5
+  return objetoMisterioso.numeroMisterioso*5
 }
 
 function eliminarPropiedad(objeto, propiedad) {
@@ -67,7 +68,7 @@ function tieneEmail(usuario) {
   // De lo contratio, devuelve "false"
   // Tu código:
 
-  return usuario[email]!==undefined
+  return usuario["email"]!==undefined && usuario["email"]!==null
 }
 
 
@@ -76,23 +77,25 @@ function tienePropiedad(objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
-  return objeto===propiedad
+  if (objeto[propiedad]) {return true}
+    else {return false}
 
-}
+
+  }
 
 function verificarPassword(usuario, password) {
   // Comprueba si la "password" enviada coincide con la propiedad "password" del objeto "usuario"
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // // Tu código:
-  return password===usuario[password] 
+  return password===usuario["password"] 
 }
 
 function actualizarPassword(usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevagPassword"
   // Devuelve el objeto
   // Tu código:
-  usuario[nuevaPassword]="nuevagPassword"
+  usuario.password=nuevaPassword
 
   return usuario
 }
@@ -126,8 +129,11 @@ function sumarLikesDeUsuario(usuario) {
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
-
-
+  suma=0
+  for (var i = 0; i < usuario.posts.length; i++) {
+    suma=usuario.posts[i].likes+suma
+  }
+  return suma
 }
 
 function agregarMetodoCalculoDescuento(producto) {
@@ -141,6 +147,12 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
 
+  producto['calcularPrecioDescuento']= function(){
+    descuento=this.precio*this.porcentajeDeDescuento  
+    return this.precio-descuento
+    
+  }
+  return producto
 }
 
 // No modificar nada debajo de esta línea
