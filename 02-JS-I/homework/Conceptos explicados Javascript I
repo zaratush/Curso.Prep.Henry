@@ -1,0 +1,3 @@
+Una variable significa  una caja en las que se puede  guardar un dato de 3 distintos tipos; datos numericos; por ejemplo 3435 , 'strings' o datos de texto; por ejemplo 'cadena' y valores booleanos, estos pueden ser verdadero o falso.
+Una funcion es una seccion especifica que es invocada desde el programa para realizar una tarea especifica. La funcion utiliza parametros que pertenecen a las variables del programa y retorna un resultado en el proceso principal.
+La declaracion if significa en español 'si', si algo es de una manera entonces sucede  otra cosa determinada. Por ejemplo, 'si yo trabajo, ganare dinero'

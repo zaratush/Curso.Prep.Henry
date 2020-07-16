@@ -1,0 +1,15 @@
+Un objeto es un contenedor de propiedades que poseen un nombre y un valor asignado  a ellas. estas  puede ser un string , un numero o funcion, estas ultimas se llaman metodos. Estas propiedades son similares a los indices de los arreglos. 
+El bucle for...in itera sobre todos los elementos de un objeto en un orden arbitrario. Se ejecuta la sentencia para cada uno de los elementos.
+
+notacion de puntos:
+
+podemos acceder a ala propiedad de un objeto escribiendola seguida de un punto.
+
+no podemos usar una variable que haga referencia a una string
+no podemos usar  strings que empiezan con numeros o tienen espacios.
+
+notacion de corchetes:
+
+podemos acceder a la propiedad escrbiendola entre comillas y corchetes.
+podemos usar una variable que haga referencia a una string
+podemos usar  strings que empiezan con numeros o tienen espacios.

@@ -1,0 +1,3 @@
+El comando 'for' significa en español 'para' y consiste en repetir una tarea una cantidad de veces dada por una lista.
+La expresion booleana '&&'  significa que para que una operacion logica sea verdadera los dos valores deben ser verdaderos, por ejemplo, si digo 'el cielo es azul && el pasto es rojo'es falso porque solo un valor es verdadero.
+la expresion booleana || significa que para que una operacion logica sea verdadera solo es necesario que al menos un valor sea verdadero, por ejemplo si digo 'el cielo es azul || el pasto es rojo'es verdadero porque hay un valor  verdadero.

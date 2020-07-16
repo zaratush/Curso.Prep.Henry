@@ -1,0 +1,2 @@
+Un constructor es una funcion que crea objetos parecidos entre si,estos tienen las mismas propiedades y pertenecen a la misma clase.Asignan las propiedades a los objetos de la misma clase
+Un prototype hace referencia a las funciones que se encuentran en la clase y que heredan los objetos que forman parte de esa clase.Asignan los metodos a los objetos de la misma clase.
