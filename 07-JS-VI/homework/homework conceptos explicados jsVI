@@ -1,1 +1,5 @@
 Un callback es una funcion que se pasa a otra función como argumento.
+Dentro de la clase array, tenemos metodos que nos permiten ejecutar la funcion callback una vez por cada elemento presente en el array en orden ascendente;
+El metodo .forEach ejecuta la funcion indicada una vez por cada elemento del array.
+El metodo .map crea un array con el retorno de la funcion callback aplicada a cada uno de sus elementos.
+El metodo .reduce ejecuta un funcion callback sobre cada elemtno de un array, devolviendo como resultado un unico valor, que se le asigna a una nueva variable.
